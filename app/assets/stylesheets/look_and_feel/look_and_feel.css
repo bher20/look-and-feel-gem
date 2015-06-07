@@ -1,0 +1,425 @@
+* {
+    margin: 0 auto;
+}
+
+
+#header, #main, #footer {
+    width: 800px;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+body, p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size:   13px;
+    line-height: 18px;
+    list-style-type: none;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+p {
+    padding: 5px;
+}
+
+a {
+    color:#000000;
+    padding:0 2px;
+    text-decoration:none;
+}
+
+a {
+    color: #000000;
+}
+a:hover {
+    background-color:#000000;
+    color:#FFFFFF;
+}
+
+th {
+    text-align: left;
+}
+
+.notice { color: green; }
+.alert  {
+    color: red;
+    padding: 0px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.console {
+    border:thin solid gray;
+}
+
+#header {
+    font-family:"PT Sans Narrow",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+    border-bottom: 5px solid #333333;
+    color:#333333;
+    padding: 15px 0;
+    height: 35px;
+}
+
+#header #header_menu {
+    float: right;
+    font-size: 10px;
+}
+
+#footer {
+    border-top: 5px solid #C1C1C1;
+    margin-top: 10px;
+    clear:both;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 11px;
+}
+
+#header h1 {
+    padding-top: 14px;
+    float: left;
+    font-size: 30px;
+}
+
+#header h1 a{
+    color: black;
+}
+
+#header h1 a:hover {
+    background-color: white;
+    color: black;
+    border-bottom: 4px solid #ccc;
+}
+
+#header p {
+    float: right;
+}
+
+#main h1 {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 10px;
+}
+
+#main table{
+    margin: 0;
+}
+
+#main form{
+    text-align: left;
+}
+
+#main form br{
+    display: none;
+    float: left;
+}
+
+#main form label {
+    width: 150px;
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    float: left;
+    line-height: 21px;
+    vertical-align: center;
+    background-color: #F0F0F0;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+}
+
+#main .show_form .change_logs {
+    color: rgb(0,0,0);
+}
+
+#main .show_form .attribute_list {
+}
+
+#main .show_form .versions {
+    text-decoration: underline;
+}
+
+#main .show_form .version_download .version_download_stats {
+    text-indent: 100px;
+}
+
+#main form label.check_box_label {
+    width: auto;
+    display: inline;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 21px;
+    vertical-align: center;
+    background-color: #FFF;
+    border: none;
+}
+
+#main form .field, #main form .actions, #main form .control-group {
+    padding-top: 10px;
+    clear: both;
+}
+
+#main form .field ul {
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    line-height: 21px;
+}
+
+#main form input[type=text], #main form input[type=password], #main form textarea {
+    float: left;
+    font-size: 14px;
+    width: 250px;
+    padding: 2px;
+    border: 2px solid #ccc;
+}
+
+#main form input[type=checkbox] {
+    margin: 4px;
+    #float: left;
+}
+
+#main form textarea {
+    height: 150px;
+}
+
+#main form input[type=submit] {
+    margin-left: 175px;
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#main h3 {
+    padding-top: 10px;
+    height: 20px;
+}
+
+#main h3 .actions{
+    display:inline;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#main h4{
+    padding: 5px;
+}
+
+#main h4 .actions{
+    display:inline;
+    font-weight: normal;
+}
+
+#main h1 {
+    padding-top: 10px;
+    height: 20px;
+}
+
+#main h1 .actions{
+    display:inline;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.fieldWithErrors {
+    display:table;
+    float:left;
+    margin:0;
+    width:100px;
+    margin-right: 10px;
+}
+
+#main form .fieldWithErrors label{
+    border: 2px solid red;
+    margin-right: 0px;
+}
+
+#main form .fieldWithErrors input, #main form .fieldWithErrors  textarea{
+    width: 250px;
+    border: 2px solid red;
+}
+
+#errorExplanation {
+    width: 413px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#errorExplanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+    margin: 0;
+}
+
+#errorExplanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+.table * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.clearfix:after {
+    padding-bottom: 4px;
+}
+
+#error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#error_explanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+.alert_style {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#alert_header {
+    display:none;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav > li > a {
+    color: black;
+    padding: 1px 5px;
+}
+
+.nav > li > a:hover {
+    background-color: white;
+    color: black;
+    border-bottom: 4px solid #ccc;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: #eeeeee;
+    border-bottom: 0px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    min-height: 0px;
+}
+
+.nav .dropdown-menu > ul {
+    padding-top: 10px;
+}
+.loader{
+    margin: 0 0 0em;
+    height: 10px;
+    width: 0%;
+    text-align: center;
+    #padding: 1em;
+    #margin: 0 auto 1em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+    fill: black;
+}
+
+table.model_attributes_table {
+    table-layout: fixed;
+}
+
+table.model_attributes_table th {
+    text-align: center;
+}
+
+table.model_attributes_table tr td:last-child, table.model_attributes_table td:first-child{
+    width: 50%;
+}
+
+table.model_attributes_table td {
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.popover-content h3 {
+    height: 1px;
+    padding-top: 1px;
+}
+
+.admin_pages {
+    width: 100%;
+    border-collapse:collapse;
+    padding:3px 7px 2px 7px;
+    text-align:center;
+}
+
+.admin_pages thead tr th {
+    padding:3px 7px 2px 7px;
+}
+
+.admin_pages tbody tr td {
+    padding:3px 7px 2px 7px;
+}
+
+.model_info #user_attributes {
+    width:50%;
+    border-collapse:collapse;
+}
+
+.model_info #user_attributes td
+{
+    font-size:1em;
+    border: 1px solid black;
+    padding:3px 7px 2px 7px;
+}

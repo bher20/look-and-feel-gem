@@ -1,0 +1,8 @@
+/*
+ *= require_self
+ *= require ./look_and_feel/bootstrap
+ *= require ./look_and_feel/look_and_feel.css
+ *= require ./look_and_feel/jquery.dataTables
+ *= require ./look_and_feel/jquery.dataTables_themeroller
+ *= require ./look_and_feel/notice_alerts
+ */
