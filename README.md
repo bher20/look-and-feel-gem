@@ -35,3 +35,4 @@ Bug reports and pull requests are welcome on Bitbucket at https://bitbucket.org/
 ## Open Source Projects Used
 * Bootstrap http://getbootstrap.com/
 * DataTables http://www.datatables.net/
+* CSS supplied in Beginning Rails 3, Updated, 2010 Apress by Cloves Carneiro Jr. and Rida Al Barazi
