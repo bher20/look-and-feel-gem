@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= t('application.name') %></title>
+  <%= stylesheet_link_tag    'application', :media => 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id='header'>
+  <%= render 'layouts/header' %>
+</div>
+<div id='main'>
+  <div id="notice" class="alert-bootstrap alert-info alert_style" hidden><%= notice %></div>
+  <div id="alert" class="alert-bootstrap alert-warning alert_style" hidden><%= alert %></div>
+
+  <%= yield %>
+</div>
+<div id='footer'>
+  <%= render 'layouts/footer' %>
+</div>
+</body>
+</html>

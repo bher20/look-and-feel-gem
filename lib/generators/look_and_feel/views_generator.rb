@@ -7,6 +7,8 @@ module LookAndFeel
 
       def manifest
         directory 'devise', 'app/views/devise'
+        directory 'layouts', 'app/views/layouts'
+        directory 'menus', 'app/views/menus'
       end
     end
   end
