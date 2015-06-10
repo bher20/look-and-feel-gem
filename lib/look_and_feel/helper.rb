@@ -2,6 +2,7 @@ module LookAndFeel
   module Helper
     def show_gravatar(app_config, options = {})
       show = AppConfig.get(%w(user_profiles show_avatars), app_config)
+      options[:enable_gravatar_session_variable] ||= 'devise_omniauth_enable_gravatar'
 
       if show
         if options[:enable_gravatar_session_variable] && session[options[:enable_gravatar_session_variable]]
