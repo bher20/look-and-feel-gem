@@ -40,6 +40,11 @@ $(document).ready(function() {
             $('#alert').slideUp();
         }, 5000);
     }
+
+    $('#local_credentials_link').click(function (event) {
+        $("#login_form").slideDown();
+        event.preventDefault(); // Prevent link from following its href
+    });
 });
 
 function setup_datatable(table)
