@@ -1,0 +1,7 @@
+<div id="footer_menu">
+<ul>
+  <% unless user_signed_in? && User.omniauth_providers && User.omniauth_providers.include?(:auth_man) %>
+  <li><%= link_to t('users.local_login'), new_user_session_path %></li>
+  <% end %>
+</ul>
+</div>
