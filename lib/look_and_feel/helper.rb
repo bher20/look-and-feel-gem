@@ -1,7 +1,7 @@
 module LookAndFeel
   module Helper
-    def show_gravatar
-      show = AppConfig.get(%w(user_profiles show_avatars))
+    def show_gravatar(app_config)
+      show = AppConfig.get(%w(user_profiles show_avatars), app_config)
 
       if show
         to_bool(show)
