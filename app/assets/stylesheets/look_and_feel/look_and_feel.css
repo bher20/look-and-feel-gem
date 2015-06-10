@@ -351,3 +351,15 @@ table.model_attributes_table td {
     border-right: 1px solid #ffffff;
     border-left: 1px solid #5E5E5E;
 }
+
+#footer_menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#footer_menu ul li {
+    display: inline;
+}
