@@ -4,7 +4,7 @@
 
 
 #header, #main, #footer {
-    width: 800px;
+    width: 50%;
     background-color: transparent;
     margin: 0 auto;
 }
@@ -37,9 +37,6 @@ a {
     text-decoration:none;
 }
 
-a {
-    color: #000000;
-}
 a:hover {
     background-color:#000000;
     color:#FFFFFF;
@@ -49,31 +46,12 @@ th {
     text-align: left;
 }
 
-.notice { color: green; }
-.alert  {
-    color: red;
-    padding: 0px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
 .console {
     border:thin solid gray;
 }
 
-#header {
-    font-family:"PT Sans Narrow",Helvetica,Arial,sans-serif;
-    letter-spacing: 1px;
-    border-bottom: 5px solid #333333;
-    color:#333333;
-    padding: 15px 0;
-    height: 35px;
-}
-
-#header #header_menu {
-    float: right;
-    font-size: 10px;
+#header .navbar {
+    margin-bottom: 0px;
 }
 
 #footer {
@@ -83,33 +61,6 @@ th {
     padding: 10px 0;
     text-align: center;
     font-size: 11px;
-}
-
-#header h1 {
-    padding-top: 14px;
-    float: left;
-    font-size: 30px;
-}
-
-#header h1 a{
-    color: black;
-}
-
-#header h1 a:hover {
-    background-color: white;
-    color: black;
-    border-bottom: 4px solid #ccc;
-}
-
-#header p {
-    float: right;
-}
-
-#main h1 {
-    font-size: 16px;
-    padding: 10px 0;
-    border-bottom: 1px solid #bbb;
-    margin-bottom: 10px;
 }
 
 #main table{
@@ -201,8 +152,8 @@ th {
 }
 
 #main h3 {
-    padding-top: 10px;
-    height: 20px;
+    padding-top: 0px;
+    height: 15px;
 }
 
 #main h3 .actions{
@@ -221,8 +172,12 @@ th {
 }
 
 #main h1 {
-    padding-top: 10px;
-    height: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    height: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #bbb;
 }
 
 #main h1 .actions{
@@ -317,45 +272,6 @@ th {
     list-style: square;
 }
 
-.alert_style {
-    text-align: center;
-    vertical-align: middle;
-}
-
-#alert_header {
-    display:none;
-}
-
-.nav > li {
-    float: left;
-}
-
-.nav > li > a {
-    color: black;
-    padding: 1px 5px;
-}
-
-.nav > li > a:hover {
-    background-color: white;
-    color: black;
-    border-bottom: 4px solid #ccc;
-}
-
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
-    background-color: #eeeeee;
-    border-bottom: 0px;
-}
-
-.navbar {
-    margin-bottom: 0px;
-    min-height: 0px;
-}
-
-.nav .dropdown-menu > ul {
-    padding-top: 10px;
-}
 .loader{
     margin: 0 0 0em;
     height: 10px;

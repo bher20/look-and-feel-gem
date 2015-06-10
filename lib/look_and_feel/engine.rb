@@ -12,6 +12,8 @@ module LookAndFeel
       #CSSs
       Rails.application.config.assets.precompile += %w{ look_and_feel.css }
       Rails.application.config.assets.precompile += %w{ look_and_feel/bootstrap.css }
+      Rails.application.config.assets.precompile += %w{ look_and_feel/bootstrap.css.map }
+      Rails.application.config.assets.precompile += %w{ look_and_feel/bootstrap-theme.css }
       Rails.application.config.assets.precompile += %w{ look_and_feel/jquery.dataTables.css }
       Rails.application.config.assets.precompile += %w{ look_and_feel/jquery.dataTables_themeroller.css }
       Rails.application.config.assets.precompile += %w{ look_and_feel/look_and_feel.css }
