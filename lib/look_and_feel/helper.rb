@@ -1,11 +1,11 @@
 module LookAndFeel
   module Helper
-    def show_gravatar(app_config)
+    def show_gravatar(app_config, options = {})
       show = AppConfig.get(%w(user_profiles show_avatars), app_config)
 
       if show
-        if session['devise_enable_gravatar']
-          to_bool(session['devise_enable_gravatar'])
+        if options[:enable_gravatar_session_variable] && session[options[:enable_gravatar_session_variable]]
+          to_bool(session[options[:enable_gravatar_session_variable]])
         else
           to_bool(show)
         end
