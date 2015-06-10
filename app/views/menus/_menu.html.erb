@@ -36,7 +36,11 @@
           </ul>
         </li>
         <% else %>
-          <%= render 'devise/menu/login_items' %>
+          <% if User.omniauth_providers && User.omniauth_providers.include?(:auth_man) %>
+            <li><%= link_to(t('users.login'), user_omniauth_authorize_path(:auth_man)) %></li>
+          <% else %>
+            <li><%= link_to(t('users.login'), new_user_session_path) %></li>
+          <% end %>
         <% end %>
       </ul>
     </div>
