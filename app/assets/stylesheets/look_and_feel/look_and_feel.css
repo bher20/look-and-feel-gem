@@ -2,7 +2,6 @@
     margin: 0 auto;
 }
 
-
 #header, #main, #footer {
     width: 50%;
     background-color: transparent;
@@ -338,4 +337,17 @@ table.model_attributes_table td {
     font-size:1em;
     border: 1px solid black;
     padding:3px 7px 2px 7px;
+}
+
+.profile_image {
+    float: right;
+}
+.profile_image a:hover {
+    background-color: transparent;
+}
+.divider-vertical {
+    height: 32px;
+    margin-top: 10px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #5E5E5E;
 }
