@@ -5,7 +5,7 @@ module LookAndFeel
       options[:enable_gravatar_session_variable] ||= 'devise_omniauth_enable_gravatar'
 
       if show
-        if options[:enable_gravatar_session_variable] && session[options[:enable_gravatar_session_variable]]
+        if options[:enable_gravatar_session_variable] && !session[options[:enable_gravatar_session_variable]].nil?
           to_bool(session[options[:enable_gravatar_session_variable]])
         else
           to_bool(show)
