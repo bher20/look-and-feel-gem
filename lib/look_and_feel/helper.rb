@@ -4,7 +4,11 @@ module LookAndFeel
       show = AppConfig.get(%w(user_profiles show_avatars), app_config)
 
       if show
-        to_bool(show)
+        if session['devise_enable_gravatar']
+          to_bool(session['devise_enable_gravatar'])
+        else
+          to_bool(show)
+        end
       else
         false
       end
