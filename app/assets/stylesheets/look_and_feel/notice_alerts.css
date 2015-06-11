@@ -1,5 +1,6 @@
 .notice {
     color: green;
+    width: 100%;
 }
 
 .alert  {
@@ -17,4 +18,12 @@
 
 #alert_header {
     display:none;
+}
+
+#notice {
+    border-radius: 0 0 25px 25px;
+}
+
+#alert {
+    border-radius: 0 0 50px 50px;
 }
