@@ -7,7 +7,7 @@ This Gem provides the CSS, Javascript, Images, and other assets for the uniform 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'look_and_feel'
+gem 'look_and_feel', :git => 'https://bitbucket.org/bherring/look-and-feel-gem'
 ```
 
 And then execute:
