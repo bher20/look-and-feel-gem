@@ -49,6 +49,10 @@ th {
     border:thin solid gray;
 }
 
+#header {
+    width: 100%;
+}
+
 #header .navbar {
     margin-bottom: 0px;
 }
