@@ -1,4 +1,4 @@
-<%= "<img class='profile_image' src='#{user.gravatar_url}'></img>".html_safe if show_gravatar %>
+<%= "<img class='profile_image' src='#{gravatar_url ? gravatar_url : user.gravatar_url}'></img>".html_safe if show_gravatar(APP_CONFIG) %>
 <strong><%= t('look_and_feel.account.first_name') %>:</strong>
 <%= user.fname %><br />
 
