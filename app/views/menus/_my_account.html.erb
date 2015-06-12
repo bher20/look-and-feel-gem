@@ -1,7 +1,7 @@
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= show_gravatar(app_config) ? (image_tag (gravatar_url ? gravatar_url : user.gravatar_url(:size => 20))) : user.full_name_comma %> <span class="caret"></span></a>
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= show_gravatar(app_config) ? (image_tag(gravatar_url ? gravatar_url : user.gravatar_url(:size => 20))) : user.full_name_comma %> <span class="caret"></span></a>
   <ul class="dropdown-menu" role="menu">
-    <% if show_gravatar %>
+    <% if show_gravatar(app_config) %>
         <li class="navbar-text"><%= "Welcome, #{user.fname}!" %></li>
         <li class="divider"></li>
     <% end %>
