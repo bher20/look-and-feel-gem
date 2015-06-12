@@ -24,6 +24,10 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= show_gravatar ? (image_tag current_user.gravatar_url(:size => 20)) : current_user.full_name_comma %> <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
+                <% if show_gravatar %>
+                    <li class="navbar-text"><%= "Welcome, #{current_user.fname}!" %></li>
+                    <li class="divider"></li>
+                <% end %>
                 <li><%= link_to t('general.my_account'), user_path %></li>
                 <li class="divider"></li>
                 <%= render 'devise/menu/login_items' %>

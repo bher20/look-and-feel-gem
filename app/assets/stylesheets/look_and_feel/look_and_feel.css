@@ -61,6 +61,13 @@ th {
      width: 60%;
 }
 
+#header .navbar li .navbar-text {
+    float: none;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
 #footer {
     border-top: 5px solid #E7E7E7;
     margin-top: 10px;
