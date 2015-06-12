@@ -57,6 +57,10 @@ th {
     margin-bottom: 0px;
 }
 
+#header .navbar .container {
+     width: 60%;
+}
+
 #footer {
     border-top: 5px solid #E7E7E7;
     margin-top: 10px;
