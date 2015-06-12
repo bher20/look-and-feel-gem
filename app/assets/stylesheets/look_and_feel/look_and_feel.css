@@ -58,7 +58,7 @@ th {
 }
 
 #footer {
-    border-top: 5px solid #C1C1C1;
+    border-top: 5px solid #E7E7E7;
     margin-top: 10px;
     clear:both;
     padding: 10px 0;
@@ -154,9 +154,28 @@ th {
     margin-bottom: 10px;
 }
 
-#main h3 {
-    padding-top: 0px;
+#main h1 {
+    padding-top: 0;
+    padding-bottom: 20px;
     height: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 3px solid #E7E7E7;
+}
+
+#main h1 .actions{
+    display:inline;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#main h3 {
+    padding-top: 0;
+    padding-bottom: 20px;
+    height: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #E7E7E7;
 }
 
 #main h3 .actions{
@@ -172,21 +191,6 @@ th {
 #main h4 .actions{
     display:inline;
     font-weight: normal;
-}
-
-#main h1 {
-    padding-top: 0px;
-    padding-bottom: 20px;
-    height: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    border-bottom: 1px solid #bbb;
-}
-
-#main h1 .actions{
-    display:inline;
-    font-weight: normal;
-    font-size: 10px;
 }
 
 .fieldWithErrors {
@@ -353,7 +357,7 @@ table.model_attributes_table td {
     height: 32px;
     margin-top: 10px;
     border-right: 1px solid #ffffff;
-    border-left: 1px solid #5E5E5E;
+    border-left: 1px solid #E7E7E7;
 }
 
 #footer_menu ul
