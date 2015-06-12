@@ -1,0 +1,12 @@
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= show_gravatar ? (image_tag gravatar_url ? gravatar_url : user.gravatar_url(:size => 20)) : user.full_name_comma %> <span class="caret"></span></a>
+  <ul class="dropdown-menu" role="menu">
+    <% if show_gravatar %>
+        <li class="navbar-text"><%= "Welcome, #{user.fname}!" %></li>
+        <li class="divider"></li>
+    <% end %>
+    <li><%= link_to t('look_and_feel.account.my_account'), my_account_path ? my_account_path : user_path %></li>
+    <li class="divider"></li>
+    <%= render 'devise/menu/login_items' %>
+  </ul>
+</li>

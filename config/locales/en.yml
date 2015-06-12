@@ -4,6 +4,7 @@ en:
       first_name: "First Name"
       last_name: "Last Name"
       email: "Email"
+      my_account: "My Account"
       attributes:
         account_attributes: "Account Attributes"
         name: "Name"
