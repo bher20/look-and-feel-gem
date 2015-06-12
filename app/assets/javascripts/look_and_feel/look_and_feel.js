@@ -10,13 +10,9 @@ $(document).ready(function() {
     });
 
 
-    $('table').each(function(){
+    $('.data_table').each(function(){
         setup_datatable(this);
     });
-
-    if ($('#inventory_table').length) {
-        inventory_table_page();
-    }
 
     if ($.trim($('#alert_header').text()).length > 0) {
         console.log("Showing Alert Header");
