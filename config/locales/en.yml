@@ -1,0 +1,17 @@
+en:
+  look_and_feel:
+    account:
+      first_name: "First Name"
+      last_name: "Last Name"
+      email: "Email"
+      attributes:
+        account_attributes: "Account Attributes"
+        name: "Name"
+        attribute: "Attribute"
+        login_count: "Login Count"
+        failed_attempts: "Failed Attempts"
+        last_ip: "Last IP"
+        confirmation_sent: "Confirmation Sent"
+        confirmed_on: "Confirmed On"
+        created_on: "Created On"
+        updated_on: "Updated On"

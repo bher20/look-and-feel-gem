@@ -9,6 +9,7 @@ module LookAndFeel
         directory 'devise', 'app/views/devise'
         directory 'layouts', 'app/views/layouts'
         directory 'menus', 'app/views/menus'
+        directory 'account', 'app/views/account'
       end
     end
   end

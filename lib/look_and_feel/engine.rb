@@ -22,5 +22,11 @@ module LookAndFeel
       Rails.application.config.assets.paths << root.join('app', 'assets')
     end
 
+    initializer 'look_and_feel.locales' do |app|
+      if app.config.i18n.fallbacks.blank?
+        app.config.i18n.fallbacks = [:en]
+      end
+    end
+
   end
 end

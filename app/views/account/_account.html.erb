@@ -1,0 +1,49 @@
+<%= "<img class='profile_image' src='#{avatar_url(user)}'></img>".html_safe if show_avatar %>
+<strong><%= t('look_and_feel.account.first_name') %>:</strong>
+<%= user.fname %><br />
+
+<strong><%= t('look_and_feel.account.last_name') %>:</strong>
+<%= user.lname %><br />
+
+<strong><%= t('look_and_feel.account.email') %></strong>
+<%= user.email %><br />
+<br />
+<br />
+<div class="panel panel-default">
+  <div class="panel-heading"><%= t('look_and_feel.account.attributes.account_attributes') %></div>
+
+  <table class="table">
+    <tr>
+      <th><%= t('look_and_feel.account.attributes.name') %></th>
+      <th><%= t('look_and_feel.account.attributes.attribute') %></th>
+    </tr>
+    <tr>
+      <td><%= t('look_and_feel.account.attributes.login_count') %></td>
+      <td><%= user.sign_in_count %></td>
+    </tr>
+    <tr>
+      <td><%= t('look_and_feel.account.attributes.failed_attempts') %></td>
+      <td> <%= user.failed_attempts %></td>
+    </tr>
+    <tr>
+      <td><%= t('look_and_feel.account.attributes.last_ip') %></td>
+      <td><%= user.last_sign_in_ip %></td>
+    </tr>
+    <tr>
+      <td><%= t('look_and_feel.account.attributes.confirmation_sent') %></td>
+      <td><%= user.confirmation_sent_at %></td>
+    </tr>
+    <tr>
+      <td><%= t('look_and_feel.account.attributes.confirmed_on') %></td>
+      <td><%= user.confirmed_at %></td>
+    </tr>
+    <tr>
+      <td><%= t('look_and_feel.account.attributes.created_on') %></td>
+      <td><%= user.created_at %></td>
+    </tr>
+    <tr>
+      <td><%= t('look_and_feel.account.attributes.updated_on') %></td>
+      <td><%= user.updated_at %></td>
+    </tr>
+  </table>
+</div>
