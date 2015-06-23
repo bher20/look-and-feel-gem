@@ -12,15 +12,17 @@
     <div class="field">Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :password %>&nbsp;<i>(leave blank if you don't want to change it)</i>
-    <%= f.password_field :password, :autocomplete => 'off' %>
-  </div>
+  <% if session['devise_login_type'].nil? %>
+    <div class="field">
+      <%= f.label :password %>&nbsp;<i>(leave blank if you don't want to change it)</i>
+      <%= f.password_field :password, :autocomplete => 'off' %>
+    </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
+    <div class="field">
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation %>
+    </div>
+  <% end %>
 
   <div class="field">
     <%= f.label :time_zone %>
