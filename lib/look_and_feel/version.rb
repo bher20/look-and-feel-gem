@@ -1,3 +1,3 @@
 module LookAndFeel
-  VERSION = '0.0.24.7'
+  VERSION = '0.0.25.2'
 end
