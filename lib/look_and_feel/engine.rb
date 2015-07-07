@@ -19,6 +19,9 @@ module LookAndFeel
       Rails.application.config.assets.precompile += %w{ look_and_feel/look_and_feel.css }
       Rails.application.config.assets.precompile += %w{ look_and_feel/notice_alerts.css }
 
+      #Images
+      Rails.application.config.assets.precompile += %w{ *.png }
+
       Rails.application.config.assets.paths << root.join('app', 'assets')
     end
 
