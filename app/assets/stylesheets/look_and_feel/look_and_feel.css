@@ -2,10 +2,19 @@
     margin: 0 auto;
 }
 
-#header, #main, #footer {
-    width: 50%;
+#main, #footer {
+    width: 65%;
     background-color: transparent;
     margin: 0 auto;
+}
+
+#header, #main, #footer {
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+#header .navbar .container {
+    width: 80%;
 }
 
 body {
